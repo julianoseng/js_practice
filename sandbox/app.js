@@ -407,7 +407,7 @@ Ctrl + Alt + Enter = insert semicolon and stay at same position
 //     do something else
 // }
 
-const id = '100';
+// const id = '100';
 
 // // equal to
 // if (id == 100) {
@@ -493,3 +493,82 @@ const id = '100';
 //     console.log('Correct');
 // else
 //     console.log('Incorrect');
+
+
+
+
+
+// // Switches
+// const color = 'red';
+
+// switch(color) {
+//     case 'red':
+//         console.log('Color is red');
+//         break;
+//     case 'blue':
+//         console.log('Color is blue');
+//         break;
+//     default:
+//         console.log('Color is not red or blue');
+//         break;
+// }
+
+// let day;
+
+// switch(new Date().getDay()) {
+//     case 0:
+//         day = 'Sunday';
+//         break;
+//     case 1:
+//         day = 'Monday';
+//         break;
+//     case 2:
+//         day = 'Tuesday';
+//         break;
+//     case 3:
+//         day = 'Wednesday';
+//         break;
+//     case 4:
+//         day = 'Thursday';
+//         break;
+//     case 5:
+//         day = 'Friday';
+//         break;
+//     case 6:
+//         day = 'Saturday';
+//         break;
+// }
+
+// console.log(`Today is ${day}`);
+
+
+
+
+
+// Function Declarations
+
+function greet(firstName = 'John', lastName = 'Doe') {
+    // console.log('Hello');
+    return 'Hello' + ' ' + firstName + ' ' + lastName;
+}
+
+// console.log(greet('Walter','Smith'));
+
+// Function expressions
+
+const square = function(x) {
+    return x*x;
+}
+
+// console.log(square(8));
+
+// Immediately Invokable function expressions - IIFEs
+// Function you declare and run at the same time
+
+// (function() {
+//     console.log('IIFE Ran...');
+// })
+
+(function(name) {
+    console.log('Hello '+ name);
+})('Brad');
